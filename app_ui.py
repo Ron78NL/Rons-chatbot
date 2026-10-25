@@ -8,6 +8,37 @@ from spraak import SPEECH_HTML
 
 st.set_page_config(page_title="Claude Chatbot", page_icon="🤖", layout="wide")
 
+# Maak de layout en koppen compacter op mobiele schermen
+st.markdown("""
+    <style>
+    @media (max-width: 768px) {
+        /* Verklein de enorme witruimte bovenin en aan de zijkanten */
+        .block-container {
+            padding-top: 2rem !important;
+            padding-bottom: 1rem !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        /* Maak de hoofdtitel (h1) een stuk kleiner */
+        h1 {
+            font-size: 1.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+        /* Maak subkoppen (h2 en h3) compacter */
+        h2 {
+            font-size: 1.25rem !important;
+        }
+        h3 {
+            font-size: 1.1rem !important;
+        }
+        /* Maak gewone chat- en paginatekst net iets strakker */
+        p, li, .stMarkdown {
+            font-size: 0.95rem !important;
+        }
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.markdown(
     """
     <style>
