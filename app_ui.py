@@ -204,7 +204,7 @@ with st.sidebar:
 chat_tab, preview_tab = st.tabs(["💬 Chat Gesprek", "🛠️ Live Preview & Sandbox"])
 
 with chat_tab:
-    st.title("🤖 Claude Chatbot Dashboard")
+    st.title("🤖 Hoe kan ik je helpen")
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
