@@ -1,5 +1,5 @@
 streamlit
 anthropic
 python-dotenv
-pypdf
+PyPDF2
 python-docx
